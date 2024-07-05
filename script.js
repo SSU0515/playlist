@@ -69,12 +69,14 @@ const initMusic = () => {
 };
 
 prev.addEventListener("click", () => {
+  initMusic();
   num++;
   frame.style.transform = `rotate(${num * deg}deg)`;
 
   active === 0 ? (active = len) : active--;
   activation(active, lists);
 });
+
 next.addEventListener("click", () => {
   initMusic();
   num--;
