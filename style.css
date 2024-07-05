@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Federo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Federo&display=swap"); */
+/* /* @import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ a {
   color: inherit;
 }
 body {
-  font-family: "Federo", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* figure */
@@ -22,7 +23,10 @@ figure {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(150deg, pink, skyblue);
+  background: url("./musicimg/Blue_heart.jpg") center;
+  /* background: url("https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=13212655&filePath=L2Rpc2sxL25ld2RhdGEvMjAxOS8yMS9DTFMxMDAwNi8xMzIxMjY1NV9XUlRfMjAxOTA1MTNfMQ==&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006")
+    center no-repeat; */
+  background-size: cover;
 }
 
 /* ==== figure h1 ==== */
@@ -32,13 +36,13 @@ figure h1 {
   left: 4vw;
 }
 figure h1 strong {
-  font: 36px/1.4 "Federo";
+  font: 45px/1.4 "Bebas Neue";
   letter-spacing: 3.2px;
-  color: #fff;
+  color: #da663c;
 }
 figure h1 span {
   display: block;
-  font: 12px/1 "Federo";
+  font: 12px/1 "Bebas Neue";
   letter-spacing: 1px;
   color: #fff;
   opacity: 0.8;
@@ -50,7 +54,7 @@ figure .menu {
   top: 8vh;
   right: 4vw;
   font-size: 24px;
-  color: #fff;
+  color: #da663c;
 }
 
 /* ==== figure p ==== */
@@ -59,9 +63,9 @@ figure > p {
   bottom: 7vh;
   left: 50%;
   transform: translateX(-50%);
-  font: 20px/1 "Federo";
+  font: 20px/1 "Bebas Neue";
   letter-spacing: 2px;
-  color: #fff;
+  color: #ebda97;
   opacity: 0.8;
 }
 
@@ -110,9 +114,8 @@ figure section article .inner .pic {
   width: 15vw;
   height: 15vw;
   margin: 0 auto;
-  border: 1px solid pink;
   border-radius: 100%;
-  background-position: center cen;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -143,11 +146,10 @@ figure section article .inner .dot {
   width: 3vw;
   height: 3vw;
   border-radius: 100%;
-  /* background: #e4f1ff; */
   position: relative;
   z-index: 3;
-  /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); */
 }
+
 @keyframes ani {
   0% {
     transform: rotate(0deg);
@@ -173,20 +175,21 @@ figure section article .inner .pic.on::after {
 
 /* ==== figure section .txt ==== */
 figure section article .inner .txt {
+  width: 100px;
   text-align: center;
   position: relative;
   z-index: 3;
 }
 figure section article .inner .txt h2 {
-  font-size: 20px;
-  font-family: "Grandiflora One", cursive;
+  font-size: 24px;
+  font-family: "Bebas Neue", cursive;
   color: #222;
   margin: 2vh 0;
 }
 figure section article .inner .txt p {
-  font-size: 14px;
+  font: bold 14px;
   margin-bottom: 3vh;
-  color: palevioletred;
+  color: #da663c;
 }
 figure section article .inner .txt ul {
   display: flex;
@@ -200,12 +203,12 @@ figure section article .inner .txt ul li {
 }
 figure section article .inner .txt ul li:hover {
   opacity: 1;
-  transform: scale(1.5);
-  color: palevioletred;
-  text-shadow: 0 0 5px pink;
+  transform: scale(1.3);
+  color: #1d6ddd;
+  text-shadow: 0 0 5px rgb(94, 166, 233);
 }
 figure section article .inner .txt ul li.play {
-  transform: scale(1.5);
+  transform: scale(1.3);
   opacity: 0.9;
 }
 figure section article .inner .txt ul li.play:hover {
@@ -231,7 +234,7 @@ figure .btnPrev::before {
   display: block;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #da663c;
   position: absolute;
   top: 50%;
   left: 0;
@@ -243,8 +246,8 @@ figure .btnPrev:hover::before {
   transform: rotate(-30deg);
 }
 figure .btnPrev span {
-  font: 11px/1 "Federo";
-  color: #fff;
+  font: 14px/1 "Bebas Neue";
+  color: #ebda97;
   opacity: 1;
   transform: translateX(30%);
   transition: all 0.5s;
@@ -258,7 +261,7 @@ figure .btnPrev::after {
   display: block;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #da663c;
   position: absolute;
   bottom: 50%;
   left: 0;
@@ -287,7 +290,7 @@ figure .btnNext::before {
   display: block;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #da663c;
   position: absolute;
   top: 50%;
   left: 0;
@@ -299,8 +302,8 @@ figure .btnNext:hover::before {
   transform: rotate(30deg);
 }
 figure .btnNext span {
-  font: 11px/1 "Federo";
-  color: #fff;
+  font: 14px/1 "Bebas Neue";
+  color: #ebda97;
   opacity: 1;
   transform: translateX(-30%);
   transition: all 0.5s;
@@ -314,7 +317,7 @@ figure .btnNext::after {
   display: block;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #da663c;
   position: absolute;
   bottom: 50%;
   right: 0;

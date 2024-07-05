@@ -20,7 +20,7 @@ let active = 0;
 lists.forEach((list) => {
   const pic = list.querySelector(".pic");
   list.style.transform = `rotate(${deg * i}deg) translateY(-100vh)`;
-  pic.style.backgroundImage = `url(./musicimg/img${i + 1}.jpeg)`;
+  pic.style.backgroundImage = `url(./musicimg/img${i + 1}.jpg)`;
   i++;
 
   const pause = list.querySelector(".pause");
